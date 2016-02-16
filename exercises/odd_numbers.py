@@ -1,8 +1,6 @@
-def even_numbers(low, high):
-	if low<high:
-		if type(low) != int and type(high) != int:
-			return "Arguments are not strings"
-			
+def odd_numbers(low, high):
+	
+	if type(low) == int and type(high) == int and low<high:
 		num = range(low, high)
 		mylist = []
 		for i in num:
@@ -11,5 +9,3 @@ def even_numbers(low, high):
 		return mylist
 	else:
 		return "Error, Arguments are incorrect"
-
-print(even_numbers(10, "Hello"));
