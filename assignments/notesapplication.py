@@ -27,8 +27,8 @@ class NotesApplication(object):
 		return self.notes
 
 	def get(self, note_id):
-		note_length = len(self.notes) -1
-		if note_id<0 or note_id > note_length:
+		index_length = len(self.notes) -1
+		if note_id<0 or note_id > index_length:
 			return "Invalid Index"
 		else:
 			return self.notes[note_id]
@@ -51,6 +51,7 @@ class NotesApplication(object):
 		note_length = len(self.notes) -1
 		if note_id<0 or note_id > note_length:
 			print "\nInvalid Index"
+			return True
 		else:
 			
 			del self.notes[note_id]
@@ -60,6 +61,7 @@ class NotesApplication(object):
 		note_length = len(self.notes) -1
 		if note_id<0 or note_id > note_length:
 			print "\nInvalid Index"
+			return True
 		else:
 			print "\n Changes Committed Succesfully!"
 			self.notes[note_id] = new_content

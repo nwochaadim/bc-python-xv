@@ -1,4 +1,3 @@
-#still working on it but right now, the application is fully interactive
 from notesapplication import NotesApplication
 
 name = raw_input("Please input Author's Name: ")
