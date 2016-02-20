@@ -49,7 +49,7 @@ while inp!= "q":
 			else:
 				note_index = int(note_index)
 				notes.delete(note_index)
-				print("\n Note with index %d has been successfully deleted! Taking you back to main menu" % note_index)
+				
 
 		elif res=="e":
 			edit_no = raw_input("Please enter index of note to edit: ")

@@ -52,8 +52,9 @@ class NotesApplication(object):
 		if note_id<0 or note_id > note_length:
 			print "\nInvalid Index"
 		else:
-			print "\n Deleted Succesfully!"
+			
 			del self.notes[note_id]
+			print("\n Note with index %d has been successfully deleted! Taking you back to main menu" % note_id)
 
 	def edit(self, note_id, new_content):
 		note_length = len(self.notes) -1
